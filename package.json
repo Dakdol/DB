@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@metamask/sdk": "^0.3.2",
     "@prisma/client": "^4.16.2",
     "@types/node": "20.4.0",
     "@types/react": "18.2.14",
